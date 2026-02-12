@@ -5,8 +5,8 @@
 }
 
 :root {
-  --bg-primary:rgb(31, 30, 30);
-  --text-color:white;
+  --bg-primary: rgb(31, 30, 30);
+  --text-color: white;
   --p-0: 0;
   --p-xs: 4px;
   --p-sm: 8px;
@@ -15,7 +15,7 @@
   --p-xl: 32px;
   --p-2xl: 48px;
   --p-3xl: 64px;
-  --bg-button:rgb(67, 66, 66);
+  --bg-button: rgb(67, 66, 66);
   --radius-none: 0;
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -123,6 +123,67 @@ main .view1 .bottom .bottom-text p {
 main .view1 .bottom .bottom-text .bottom-button {
   color: var(--text-color);
 }
+main .view2 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  flex-direction: row;
+  padding: var(--p-lg);
+}
+main .view2 .view2-top,
+main .view2 .view2-bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 4rem;
+  text-align: center;
+}
+main .view3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: var(--p-sm) var(--p-md);
+  flex-direction: column;
+}
+main .view3 .view3-top {
+  width: 100%;
+}
+main .view3 .view3-top img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--radius-md);
+}
+main .view3 .view3-bottom {
+  padding: var(--p-sm) var(--p-lg);
+  background-color: rgb(42, 41, 41);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+main .view3 .view3-bottom .bottom-text {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: start;
+}
+main .view3 .view3-bottom .bottom-text h3 {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+main .view3 .view3-bottom .bottom-text p {
+  font-size: 1.4rem;
+  color: rgb(161, 161, 161);
+  font-weight: 100;
+}
 
 @media (min-width: 600px) {
   main .nav-bar nav a:nth-child(1),
@@ -133,7 +194,8 @@ main .view1 .bottom .bottom-text .bottom-button {
     flex-direction: row;
     align-items: stretch;
   }
-  main .view1 .top, main .view1 .bottom {
+  main .view1 .top,
+  main .view1 .bottom {
     width: 50%;
   }
   main .view1 .bottom {
@@ -142,5 +204,26 @@ main .view1 .bottom .bottom-text .bottom-button {
   }
   main .view1 .bottom .bottom-text {
     gap: 2rem;
+  }
+  main .view2 {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    flex-direction: row;
+    padding: var(--p-2xl);
+  }
+  main .view2 .view2-top,
+  main .view2 .view2-bottom {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    gap: 10rem;
+  }
+  main .view3 {
+    flex-direction: row-reverse;
+  }
+  main .view3 .view3-top,
+  main .view3 .view3-bottom {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
