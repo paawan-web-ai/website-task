@@ -40,7 +40,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0rem;
 }
 main .nav-bar {
   width: 100%;
@@ -120,20 +120,19 @@ main .view2 {
   flex-direction: column;
   gap: 0rem;
   flex-direction: row;
-  justify-content: space-around;
   text-align: center;
+  justify-content: center;
 }
 main .view2 .view2-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 main .view2 .view2-top, main .view2 .view2-bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 main .view3 {
   width: 100%;
@@ -179,6 +178,115 @@ main .view3 .view3-bottom .view3-text .view3-para p {
   font-size: 1.2rem;
   opacity: 0.6;
   line-height: 2rem;
+}
+main .view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view4 .view4-top {
+  width: 100%;
+}
+main .view4 .view4-top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main .view4 .view4-bottom {
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+main .view4 .view4-bottom .view4-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view4 .view4-bottom .view4-text h1 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+main .view4 .view4-bottom .view4-text .view4-para {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main .view4 .view4-bottom .view4-text .view4-para p {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  opacity: 0.6;
+  line-height: 2rem;
+}
+main .view5 {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+main .view6 {
+  width: 100%;
+}
+main .view6 .cards {
+  width: 100%;
+}
+main .view6 .cards .card-element {
+  width: 100%;
+  position: relative;
+}
+main .view6 .cards .card-element img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+main .view6 .cards .card-element .card-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--p-md) var(--p-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-direction: row;
+  font-size: 1rem;
+}
+main .view6 .cards .card-element .card-svg .twitter, main .view6 .cards .card-element .card-svg .instagram, main .view6 .cards .card-element .card-svg .behance {
+  background: rgba(255, 255, 255, 0.1); /* transparent */
+  backdrop-filter: blur(10px); /* blur strength */
+  -webkit-backdrop-filter: blur(10px);
+  padding: var(--p-sm);
+  border-radius: 50%;
+  width: 40px;
+  text-align: center;
+  border: 1px solid white;
+}
+main .view6 .cards .card-element .card-info {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  display: flex;
+  justify-content: center;
+  padding: var(--p-xl);
+}
+main .view6 .cards .card-element .card-info .infos {
+  border-radius: var(--radius-md);
+  border: 1px solid white;
+  width: 100%;
+  padding: var(--p-lg);
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* transparent */
+  backdrop-filter: blur(10px); /* blur strength */
+  -webkit-backdrop-filter: blur(10px);
+}
+main .view6 .cards .card-element .card-info .infos p {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @media (min-width: 900px) {
@@ -277,5 +385,117 @@ main .view3 .view3-bottom .view3-text .view3-para p {
   }
   main .view3 .view3-top, main .view3 .view3-bottom {
     width: 50%;
+  }
+  main .view4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-direction: row;
+  }
+  main .view4 .view4-bottom {
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .view4 .view4-bottom p {
+    font-size: 1.5rem;
+  }
+  main .view4 .view4-bottom .view4-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  main .view4 .view4-bottom .view4-text h1 {
+    font-weight: 200;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  main .view4 .view4-bottom .view4-text .view4-para {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-direction: row;
+  }
+  main .view4 .view4-bottom .view4-text .view4-para p {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    font-weight: 200;
+    font-size: 1rem;
+    opacity: 0.6;
+    line-height: 2rem;
+  }
+  main .view4 .view4-top, main .view4 .view4-bottom {
+    width: 50%;
+  }
+  main .view6 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  main .view6 .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  main .view6 .cards .card-element {
+    width: 100%;
+    position: relative;
+  }
+  main .view6 .cards .card-element img {
+    width: 100%;
+  }
+  main .view6 .cards .card-element .card-svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: var(--p-md) var(--p-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+  main .view6 .cards .card-element .card-svg .twitter, main .view6 .cards .card-element .card-svg .instagram, main .view6 .cards .card-element .card-svg .behance {
+    background: rgba(255, 255, 255, 0.1); /* transparent */
+    backdrop-filter: blur(10px); /* blur strength */
+    -webkit-backdrop-filter: blur(10px);
+    padding: var(--p-md);
+    border-radius: 50%;
+    width: 55px;
+    text-align: center;
+    border: 1px solid white;
+  }
+  main .view6 .cards .card-element .card-info {
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    display: flex;
+    justify-content: center;
+    padding: var(--p-xl);
+  }
+  main .view6 .cards .card-element .card-info .infos {
+    border-radius: var(--radius-md);
+    border: 1px solid white;
+    width: 100%;
+    padding: var(--p-md);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1); /* transparent */
+    backdrop-filter: blur(10px); /* blur strength */
+    -webkit-backdrop-filter: blur(10px);
+  }
+  main .view6 .cards .card-element .card-info .infos p {
+    font-size: 15px;
+    font-weight: 500;
   }
 }/*# sourceMappingURL=style.css.map */

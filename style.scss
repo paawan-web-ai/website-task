@@ -45,7 +45,7 @@ body{
 
 main{
     width: 100%;
-    @include flexCol(1rem);
+    @include flexCol(0rem);
 
 
     .nav-bar {
@@ -127,19 +127,18 @@ main{
         width: 100%;
         @include flexCol(0rem);
         flex-direction: row;
-        justify-content: space-around;
         text-align: center;
+        justify-content: center;
         
         .view2-top{
             display: flex;
             flex-direction: row;
-            justify-content: space-between
         }
 
         .view2-top,.view2-bottom{
             width: 100%;
             @include flexCol(3rem);
-            font-size: 1.7rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -182,6 +181,116 @@ main{
             }
         }
     }
+    .view4{
+        width: 100%;
+        @include flexCol(1rem);
+        .view4-top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .view4-bottom{
+            background-color: rgb(61, 61, 61);
+            @include flexCol(3rem);
+            padding: 1.5rem;
+            border-radius: 10px;
+
+            .view4-text{
+                @include flexCol(1.5rem);
+
+                h1{
+                    font-weight: 200;
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                }
+                .view4-para{
+                    @include flexCol(0rem);
+                    p{
+                    @include flexCol(0rem);
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    opacity: 0.6;
+                    line-height: 2rem;
+
+                }
+                }
+               
+            }
+        }
+    }
+    
+    .view5{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .view6{
+        
+        width: 100%;
+        .cards{
+            width: 100%;
+        .card-element{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                border-radius: 0.3rem;
+            }
+            
+            .card-svg{
+                
+                position: absolute;
+                top: 0;
+                right: 0; 
+                padding: var(--p-md) var(--p-lg);
+                @include flexCol(1rem);
+                flex-direction: row;
+                font-size: 1rem;
+                
+                .twitter,.instagram,.behance{
+                    
+                    background: rgba(255, 255, 255, 0.1); /* transparent */
+                    backdrop-filter: blur(10px);          /* blur strength */
+                    -webkit-backdrop-filter: blur(10px);
+                    padding: var(--p-sm);
+                    border-radius:50% ;
+                    width:40px;
+                    text-align: center;
+                    border: 1px solid white;
+                }
+            }
+            .card-info{
+                
+                width: 100%;
+                position: absolute;
+                top:75%;
+                display: flex;
+                justify-content: center;
+                padding: var(--p-xl);
+                .infos{
+                    border-radius: var(--radius-md);
+                    border: 1px solid white;
+                    width: 100%;
+                    padding: var(--p-lg);
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.1); /* transparent */
+                    backdrop-filter: blur(10px);          /* blur strength */
+                    -webkit-backdrop-filter: blur(10px);
+                    p{
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        }
+    }
+   
 }
 
 @media (min-width:900px){
@@ -274,6 +383,118 @@ main{
             width: 50%;
         }
     }
+        .view4{
+        width: 100%;
+        @include flexCol(1rem);
+        flex-direction: row;
+        .view4-bottom{
+            background-color: rgb(61, 61, 61);
+            @include flexCol(3rem);
+            padding: 1.5rem;
+            border-radius: 10px;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            p{
+                font-size: 1.5rem
+            }
+
+            .view4-text{
+                @include flexCol(1.5rem);
+       
+                h1{
+                    font-weight: 200;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                }
+                .view4-para{
+                    @include flexCol(2rem);
+                    flex-direction: row;
+                    p{
+                    @include flexCol(0rem);
+                    font-weight: 200;
+                    font-size: 1rem;
+                    opacity: 0.6;
+                    line-height: 2rem;
+                }
+                }
+               
+            }
+        }
+        .view4-top,.view4-bottom{
+            width: 50%;
+        }
+    }
+     .view6{
+        
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        
+        .cards{
+        @include flexCol(1rem);
+        
+            width: 100%;
+        .card-element{
+            width: 100%;
+            position: relative;
+            
+            img{
+                width: 100%;
+            }
+            
+            .card-svg{
+                
+                position: absolute;
+                top: 0;
+                right: 0; 
+                padding: var(--p-md) var(--p-lg);
+                @include flexCol(1rem);
+                flex-direction: row;
+                font-size: 1rem;
+                
+                .twitter,.instagram,.behance{
+                    
+                    background: rgba(255, 255, 255, 0.1); /* transparent */
+                    backdrop-filter: blur(10px);          /* blur strength */
+                    -webkit-backdrop-filter: blur(10px);
+                    padding: var(--p-md);
+                    border-radius:50% ;
+                    width:55px;
+                    text-align: center;
+                    border: 1px solid white;
+                }
+            }
+            .card-info{
+                
+                width: 100%;
+                position: absolute;
+                top:75%;
+                display: flex;
+                justify-content: center;
+                padding: var(--p-xl);
+                .infos{
+                    border-radius: var(--radius-md);
+                    border: 1px solid white;
+                    width: 100%;
+                    padding: var(--p-md);
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 12px;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.1); /* transparent */
+                    backdrop-filter: blur(10px);          /* blur strength */
+                    -webkit-backdrop-filter: blur(10px);
+                    p{
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        }
+    }
 
     }
+  
 }
